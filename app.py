@@ -5,8 +5,8 @@ import cv2
 import numpy as np
 import threading
 
-from Model.models import load_snn_model, load_cnn_model, encode, decode
-from Model.models import End2EndTrain, CAE, DenseDecoder
+from models import load_snn_model, load_cnn_model, encode, decode
+from models import End2EndTrain, CAE, DenseDecoder
 
 import torchvision.transforms as transforms
 import torchvision.datasets as datasets
@@ -132,3 +132,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
