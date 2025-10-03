@@ -1,8 +1,11 @@
 The project contains three parts:
 
-1. Encoding part://
+1. Encoding part:
+   
    We use brian2 to accomplish the simulation of one-layer neuronal network.
-   Specifically, we use LIF model to describe a single neuron's dynamics, and use
+   Specifically, we use LIF model to describe a single neuron's dynamics, and use Poisson Process to simulate the input of external images.
+   The external image will first go through a receptive field simulated by matrix multiplication. And then go through the neuronal network written by    
+   brian2. Finally, one can get the spike trains in certain time period.
    
 2. Decoding part:
    
@@ -12,7 +15,8 @@ The project contains three parts:
    and then go through a U-Net to reconstruct the targeted image.
    The framework follows Liu.
    
-4. Demo
+3. Demo
+   
    This part of code is mainly completed by my senior, Ming Zhang.
    By using a computer camera, one can capture a real-life photo, resize it,
    and then obtain the corresponding spike train as well as the reconstructed image.
